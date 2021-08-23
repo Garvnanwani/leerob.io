@@ -38,7 +38,7 @@ html {
 }
 
 .skip-nav {
-  @apply absolute px-4 py-2 transition-transform duration-200 transform -translate-y-12 focus:translate-y-3 -top-8;
+  @apply absolute px-4 py-2 transition-transform duration-200 transform -translate-y-12 left-1/4 focus:top-4 focus:translate-y-3 -top-8;
 }
 
 @supports not (backdrop-filter: none) {
@@ -159,15 +159,15 @@ pre {
   scrollbar-width: none; /* Firefox */
 }
 
-.remark-code-title {
+.rehype-code-title {
   @apply px-5 py-3 font-mono text-sm font-bold text-gray-800 bg-gray-200 border border-b-0 border-gray-200 rounded-t dark:text-gray-200 dark:border-gray-700 dark:bg-gray-800;
 }
 
-.remark-code-title + pre {
+.rehype-code-title + pre {
   @apply mt-0 rounded-t-none;
 }
 
-.mdx-marker {
+.highlight-line {
   @apply block px-4 -mx-4 bg-gray-100 border-l-4 border-blue-500 dark:bg-gray-800;
 }
 
@@ -197,6 +197,6 @@ input[type='email'] {
 }
 
 table {
-  display: block;
+  display: table;
   overflow-y: scroll;
 }
